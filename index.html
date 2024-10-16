@@ -16,11 +16,13 @@
 
         </div>
         <div class="flex-1 flex flex-col justify-center items-center gap-[100px]">
-            <h1 class="text-[48px] text-center">Descubra seu nome de <span class="block text-[90px] uppercase bg-gradient-to-b from-[#37C000] to-black bg-clip-text text-transparent"> Programador </span></h1>
-            <form class="flex gap-4">
+            <h1 class="text-[48px] text-center">Descubra seu nome de <span
+                    class="block text-[90px] uppercase bg-gradient-to-b from-[#37C000] to-black bg-clip-text text-transparent">
+                    Programador </span></h1>
+            <form class="flex gap-4 onsubmit= calcularMedia(event)">
                 <div>
                     <label for="dia" class="block">Escolha seu dia</label>
-                    <input id="dia" type="number" class="w-[250px] h-[40px] text-black">
+                    <input id="dia" class="w-[250px] h-[40px] text-black" type="number" min="1" max="31"  placeholder="Digite o dia">
                 </div>
                 <div>
                     <label for="mes" class="block">Escolha seu mês</label>
@@ -39,8 +41,15 @@
                         <option value="12">Dezembro</option>
                     </select>
                 </div>
+                <div>
+                    <button id="btn"
+                        class="w-[150px] h-[40px] bg-[#37C000] hover:bg-[#299000] duration-300 text-black font-bold rounded flex m-5 pl-6 pt-2">Descobrir</button>
+                </div>
+
+
             </form>
-            <h2 class="text-[24px] text-center">Seu nome é <span id="nome" class="block text-[40px]"></span>...</h2>
+            <h2 class="text-[24px] text-center">Seu nome é <span id="nome" class="block text-[40px]"></span
+                    id=display>...</h2>
         </div>
     </main>
     <script src="js/index.js"></script>
